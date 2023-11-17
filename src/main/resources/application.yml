@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://192.168.1.214\sqlfactory;databaseName=prueba1;encrypt=false
+    username: sa
+    password: MDS1610solPRO
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    database-platform: org.hibernate.dialect.SQLServerDialect
+    hibernate:
+      ddl-auto: update
+logging:
+  file:
+    name:  ./var/log/TacoCloud.log
+server:
+  port: 9000  
